@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Certificate of Appreciation</title>
+    <style>
+      /* CSS styles for the certificate */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f3f3f3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .certificate {
+        width: 620px; /* Adjust width as per your PDF document size */
+        height: 500px; /* Adjust height as per your PDF document size */
+        border: 8px solid #155d97;
+        border-radius: 15px;
+        padding: 40px;
+
+        background: linear-gradient(135deg, #cbe0e2, #f4dadd);
+        background-repeat: no-repeat;
+        /* background-size: 100% 100%;  */
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        color: #151515;
+        line-height: 1.6;
+      }
+      /* .certificate-header {
+        margin-bottom: 20px;
+      } */
+      .certificate-header img {
+        max-width: 200px;
+      }
+      h2 {
+        color: #084678;
+        /* margin-bottom: 20px; */
+        font-size: 32px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      .details {
+        margin-bottom: 30px;
+      }
+      .details p {
+        margin: 15px 0;
+        font-size: 18px;
+        text-align: left;
+      }
+      .detail-2 p {
+        margin: 15px 0;
+        font-size: 18px;
+        text-align: center;
+      }
+/* ... (other styles remain unchanged) ... */
+
+.director-signature {
+  text-align: right;
+  margin-top: 40px;
+}
+
+.signature {
+  display: inline-block;
+}
+
+.signature span {
+  font-family: 'Brush Script MT', cursive; /* or other signature-style font */
+  color: #084678; /* Keep the color same as other text */
+  display: block;
+  margin: 2px 2px;
+}
+
+.signature hr {
+  border: none;
+  border-top: 2px solid #151515; /* Adjust line color and style */
+  width: 100px; /* Adjust the width of the line */
+  /* margin: 0 auto; */
+  margin-bottom: 1px; /* Center the line */
+}
+
+.signature-line {
+  width: 50%; /* Width of the line */
+}
+
+/* ... (other styles remain unchanged) ... */
+
+
+      
+    </style>
+  </head>
+  <body>
+    <div class="certificate">
+      <div class="certificate-header">
+        <!-- <img src="[Organization Logo URL]" alt="Organization Logo"> -->
+        <h2>Certificate of Appreciation</h2>
+      </div>
+      <div class="details">
+        <p>This certifies that</p>
+        <p>
+          <strong>Name: </strong><%=name %><br><strong>Mobile Number: </strong><%=mobile_number%><br>
+          <strong>Email:</strong> <%=email%><br />
+        </p>
+      </div>
+        <div class="details-2">
+        <p>
+          Has made a generous contribution of <strong>Rs <%=amount%></strong> to
+          our tree planting initiative, contributing to the planting of
+          <strong><%=number_of_trees%></strong> trees and demonstrating a
+          commendable commitment to environmental conservation and
+          sustainability.
+        </p>
+        <p>
+          Presented by the <strong>Forest Friends</strong> on behalf of our team
+          and with heartfelt gratitude from the Organization Head.
+        </p>
+      
+        <!-- ... (other code remains unchanged) ... -->
+<div class="director-signature">
+  <div class="signature">
+    <span>Jipnesh Kumar</span>
+    <hr>
+    <span class="name">Forest Friends</span>
+  </div>
+</div>
+<!-- ... (other code remains unchanged) ... -->
+
+        <!-- <p><strong>Jipnesh Kumar<br>
+      Director<br>
+      Forest Friends</strong></p> -->
+        <!-- <img src="tree.png" height="90px" width="200px" alt="Organization Logo" /> -->
+        <p>
+          Certificate issued on:
+          <strong><%= new Date().toLocaleDateString() %></strong>
+        </p>
+      </div>
+      <!-- <div class="director-signature">
+      <img src="sign.png" alt="Director's Signature">
+    </div> -->
+    </div>
+  </body>
+</html>

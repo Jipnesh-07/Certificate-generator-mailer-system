@@ -1,0 +1,70 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d1c9c990;
+    display: flex;
+    /* background-color: #ffffff; */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: linear-gradient(135deg, #5d88ae, #d590b3);
+    padding: 60px;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    width: 80%;
+    text-align: center;
+    color: #fff;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+input[type='file'] {
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    width: calc(100% - 26px);
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 16px;
+}
+
+.submit-btn {
+    padding: 12px 24px;
+    background-color: #ff7f50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+}
+
+.submit-btn:hover {
+    background-color: #ff6347;
+}
